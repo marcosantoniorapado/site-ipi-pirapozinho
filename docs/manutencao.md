@@ -69,3 +69,15 @@ http://localhost:8080
 - Confirmar com a liderança antes de publicar informações financeiras.
 - Manter o site simples.
 - Usar redes sociais para avisos semanais e conteúdo que muda com frequência.
+
+
+## Atualização semanal do boletim
+
+Para atualizar o boletim dominical no site:
+
+1. Salvar o novo PDF com o nome `boletim-dominical.pdf`.
+2. Substituir o arquivo existente em `downloads/boletim-dominical.pdf`.
+3. Fazer commit e push para o GitHub.
+4. Aguardar o GitHub Pages atualizar a página.
+
+Manter sempre o mesmo nome de arquivo evita precisar alterar o link no `index.html`.

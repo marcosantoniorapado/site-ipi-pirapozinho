@@ -18,3 +18,8 @@
 Os links nacionais servem como apoio institucional, histórico, notícias e conexão com a denominação.
 
 O site da IPI Pirapozinho deve continuar simples e local, sem tentar copiar toda a estrutura do site nacional.
+
+## Bíblia e materiais
+
+- Bíblia Online IPIB: https://boomerang.dzign-e.net/ipib/utils/link/bible.php
+- Boletim dominical atual: `downloads/boletim-dominical.pdf`

@@ -21,3 +21,12 @@ Projeto organizado por Marcos, com apoio da Sofia na documentação, planejament
 ## Versão inicial
 
 Primeira versão planejada como site estático em HTML, CSS e JavaScript puro, com publicação via GitHub Pages.
+
+
+## Ajustes da segunda versão
+
+- Barra superior fixada no topo durante a rolagem.
+- Inclusão do link da Bíblia Online da IPIB.
+- Inclusão de seção para download do boletim dominical.
+- Criação da pasta `downloads` para armazenar o boletim atual.
+- Ajuste do rodapé, removendo a frase de autoria e centralizando o texto restante.

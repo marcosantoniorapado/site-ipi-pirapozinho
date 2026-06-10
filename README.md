@@ -70,3 +70,8 @@ https://marcosantoniorapado.github.io/site-ipi-pirapozinho/
 ## Observação
 
 Este site usa informações fixas e de baixa manutenção. Avisos semanais, escalas, aniversariantes e boletins completos devem continuar nas redes sociais ou no WhatsApp, para evitar conteúdo desatualizado no site.
+
+
+## Boletim dominical
+
+O boletim dominical atual fica em `downloads/boletim-dominical.pdf`. Para atualizar, substitua esse arquivo mantendo o mesmo nome.
