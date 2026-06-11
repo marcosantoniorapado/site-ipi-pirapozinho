@@ -75,9 +75,7 @@ http://localhost:8080
 
 Para atualizar o boletim dominical no site:
 
-1. Salvar o novo PDF com o nome `boletim-dominical.pdf`.
-2. Substituir o arquivo existente em `downloads/boletim-dominical.pdf`.
+1. Salvar o novo PDF com o nome definido para a edição atual.
+2. Substituir o arquivo existente em `downloads/Boletim Dominical.pdf`.
 3. Fazer commit e push para o GitHub.
 4. Aguardar o GitHub Pages atualizar a página.
-
-Manter sempre o mesmo nome de arquivo evita precisar alterar o link no `index.html`.

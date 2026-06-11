@@ -11,7 +11,7 @@ Marcos pediu ajustes pontuais mantendo o visual atual do site.
 4. Criar a seção "Boletim dominical" com botão para download.
 5. Criar a pasta `downloads/`.
 6. Colocar o boletim atual em:
-   `downloads/boletim-dominical.pdf`
+   `downloads/Boletim Dominical.pdf`
 7. Remover do rodapé a frase:
    "Site estático organizado por Marcos com apoio da Sofia."
 8. Centralizar o texto restante do rodapé.
@@ -28,6 +28,6 @@ git push
 
 Para trocar o boletim toda semana, substituir apenas:
 
-`downloads/boletim-dominical.pdf`
+`downloads/Boletim Dominical.pdf`
 
-mantendo o mesmo nome. Assim o botão do site continua funcionando sem precisar alterar o HTML.
+e ajustar o link no HTML se o nome do arquivo mudar.

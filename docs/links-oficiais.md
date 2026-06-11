@@ -22,4 +22,4 @@ O site da IPI Pirapozinho deve continuar simples e local, sem tentar copiar toda
 ## Bíblia e materiais
 
 - Bíblia Online IPIB: https://boomerang.dzign-e.net/ipib/utils/link/bible.php
-- Boletim dominical atual: `downloads/boletim-dominical.pdf`
+- Boletim dominical atual: `downloads/Boletim Dominical.pdf`

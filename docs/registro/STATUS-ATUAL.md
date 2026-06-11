@@ -2,7 +2,7 @@
 
 ## Estado
 
-Segunda versão do site integrada ao projeto, com barra fixa, Bíblia Online e boletim dominical.
+Segunda versão do site integrada ao projeto, com barra fixa, Bíblia Online e boletim dominical atualizado.
 
 ## O que já existe
 
@@ -10,7 +10,7 @@ Segunda versão do site integrada ao projeto, com barra fixa, Bíblia Online e b
 - arquivos do site atualizados com o pacote v2
 - README e documentação do projeto atualizados
 - imagens oficiais em `assets/img/`
-- boletim dominical em `downloads/boletim-dominical.pdf`
+- boletim dominical em `downloads/Boletim Dominical.pdf`
 - orientação extra de atualização em `ORIENTACAO_ATUALIZACAO_SITE_IPI.md`
 - contexto vivo registrado
 

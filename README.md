@@ -74,4 +74,4 @@ Este site usa informações fixas e de baixa manutenção. Avisos semanais, esca
 
 ## Boletim dominical
 
-O boletim dominical atual fica em `downloads/boletim-dominical.pdf`. Para atualizar, substitua esse arquivo mantendo o mesmo nome.
+O boletim dominical atual fica em `downloads/Boletim Dominical.pdf`.
