@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/favicon/favicon-192.png" />
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero" id="inicio">
@@ -39,13 +39,11 @@
         </div>
 
         <div class="lang-switcher" aria-label="Selecionar idioma">
-          <button class="lang-button is-active" type="button" data-lang="pt" aria-label="Ver site em português" title="Português">
-            <span class="flag-icon flag-br" aria-hidden="true"><span></span></span>
-            <span class="lang-label">PT</span>
+          <button class="lang-button is-active" type="button" data-lang="pt" data-i18n="lang.pt">
+            🇧🇷 Português
           </button>
-          <button class="lang-button" type="button" data-lang="de" aria-label="Webseite auf Deutsch anzeigen" title="Deutsch">
-            <span class="flag-icon flag-de" aria-hidden="true"><span></span></span>
-            <span class="lang-label">DE</span>
+          <button class="lang-button" type="button" data-lang="de" data-i18n="lang.de">
+            🇩🇪 Deutsch
           </button>
         </div>
 
@@ -252,7 +250,8 @@
     </section>
 
     <section class="section giving">
-      <div class="container giving-box">
+    <div class="container giving-box giving-layout">
+      <div class="giving-content">
         <p class="section-kicker" data-i18n="giving.kicker">Contribuições</p>
         <h2 data-i18n="giving.title">Dízimos e ofertas</h2>
         <p data-i18n="giving.text">Informações para contribuição, conforme dados divulgados no boletim da igreja.</p>
@@ -279,8 +278,14 @@
           </p>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="giving-qr">
+        <img src="assets/img/qrcode-pix.png" alt="QR Code Pix da Igreja Presbiteriana Independente de Pirapozinho" />
+        <p class="qr-caption">Pix da igreja</p>
+      </div>
+    </div>
+  </section>
+</main>
 
   <a
     class="floating-whatsapp"
@@ -300,6 +305,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js"></script>
 </body>
 </html>

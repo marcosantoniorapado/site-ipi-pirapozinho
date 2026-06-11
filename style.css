@@ -94,15 +94,12 @@ img {
 .topbar-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
-  flex-wrap: nowrap;
+  gap: 18px;
 }
 
 .nav-links {
   display: flex;
-  gap: 18px;
-  align-items: center;
-  flex-shrink: 0;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -119,26 +116,21 @@ img {
 .lang-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px;
+  gap: 8px;
+  padding: 6px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
-  flex-shrink: 0;
 }
 
 .lang-button {
   border: 0;
   border-radius: 999px;
-  padding: 6px 9px;
+  padding: 8px 12px;
   background: transparent;
   color: #fff;
-  font-weight: 800;
-  font-size: 0.78rem;
+  font-weight: 700;
+  font-size: 0.92rem;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  line-height: 1;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
@@ -147,46 +139,8 @@ img {
 }
 
 .lang-button.is-active {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--primary-dark);
-}
-
-.flag-icon {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  height: 15px;
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
-  background: #fff;
-}
-
-.flag-br {
-  background: #229e45;
-}
-
-.flag-br::before {
-  content: "";
-  position: absolute;
-  inset: 3px 5px;
-  background: #f8e05f;
-  transform: rotate(45deg);
-}
-
-.flag-br::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  left: 7.5px;
-  top: 4px;
-  border-radius: 50%;
-  background: #2b4f9c;
-}
-
-.flag-de {
-  background: linear-gradient(to bottom, #111 0 33.33%, #dd0000 33.33% 66.66%, #ffce00 66.66% 100%);
 }
 
 .menu-toggle {
@@ -243,8 +197,6 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  line-height: 1.25;
   min-height: 48px;
   padding: 13px 20px;
   border-radius: 999px;
@@ -419,12 +371,6 @@ h2 {
   box-shadow: none;
 }
 
-.prayer-box .btn {
-  min-width: 220px;
-  max-width: 260px;
-  white-space: normal;
-}
-
 .links-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -524,10 +470,11 @@ footer {
 
 @media (max-width: 900px) {
   .topbar {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .topbar-actions {
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
@@ -587,19 +534,17 @@ footer {
   }
 
   .topbar-actions {
-    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .lang-switcher {
-    padding: 4px;
+    width: 100%;
+    justify-content: center;
   }
 
   .lang-button {
-    padding: 6px 8px;
-  }
-
-  .lang-label {
-    display: none;
+    flex: 1;
   }
 
   .cards,
@@ -623,5 +568,63 @@ footer {
   .floating-whatsapp {
     right: 14px;
     bottom: 14px;
+  }
+}
+
+
+/* Ajustes do botão de oração */
+.prayer-box .btn-whatsapp {
+  text-align: center;
+  white-space: normal;
+  min-width: 230px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+/* Dízimos e ofertas com QR Code */
+.giving-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 260px;
+  gap: 28px;
+  align-items: center;
+}
+
+.giving-content {
+  min-width: 0;
+}
+
+.giving-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.giving-qr img {
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(24, 39, 75, 0.12);
+  border: 1px solid rgba(23, 63, 109, 0.08);
+}
+
+.qr-caption {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .giving-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .giving-qr {
+    margin-top: 8px;
   }
 }
