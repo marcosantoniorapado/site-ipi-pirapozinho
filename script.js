@@ -217,6 +217,8 @@ function applyTranslations(language) {
   const activeTranslations = translations[language] || fallback;
 
   document.documentElement.lang = language === "de" ? "de" : "pt-BR";
+  document.documentElement.dataset.language = language;
+  document.title = activeTranslations["page.title"] || fallback["page.title"] || document.title;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;

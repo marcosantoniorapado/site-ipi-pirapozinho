@@ -94,12 +94,15 @@ img {
 .topbar-actions {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
+  flex-wrap: nowrap;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 18px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-links a {
@@ -116,21 +119,26 @@ img {
 .lang-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px;
+  gap: 6px;
+  padding: 5px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 .lang-button {
   border: 0;
   border-radius: 999px;
-  padding: 8px 12px;
+  padding: 6px 9px;
   background: transparent;
   color: #fff;
-  font-weight: 700;
-  font-size: 0.92rem;
+  font-weight: 800;
+  font-size: 0.78rem;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
@@ -139,8 +147,46 @@ img {
 }
 
 .lang-button.is-active {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   color: var(--primary-dark);
+}
+
+.flag-icon {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 15px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+  background: #fff;
+}
+
+.flag-br {
+  background: #229e45;
+}
+
+.flag-br::before {
+  content: "";
+  position: absolute;
+  inset: 3px 5px;
+  background: #f8e05f;
+  transform: rotate(45deg);
+}
+
+.flag-br::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 7.5px;
+  top: 4px;
+  border-radius: 50%;
+  background: #2b4f9c;
+}
+
+.flag-de {
+  background: linear-gradient(to bottom, #111 0 33.33%, #dd0000 33.33% 66.66%, #ffce00 66.66% 100%);
 }
 
 .menu-toggle {
@@ -197,6 +243,8 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  line-height: 1.25;
   min-height: 48px;
   padding: 13px 20px;
   border-radius: 999px;
@@ -371,6 +419,12 @@ h2 {
   box-shadow: none;
 }
 
+.prayer-box .btn {
+  min-width: 220px;
+  max-width: 260px;
+  white-space: normal;
+}
+
 .links-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -470,11 +524,10 @@ footer {
 
 @media (max-width: 900px) {
   .topbar {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .topbar-actions {
-    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
@@ -534,17 +587,19 @@ footer {
   }
 
   .topbar-actions {
-    width: 100%;
-    justify-content: space-between;
+    gap: 8px;
   }
 
   .lang-switcher {
-    width: 100%;
-    justify-content: center;
+    padding: 4px;
   }
 
   .lang-button {
-    flex: 1;
+    padding: 6px 8px;
+  }
+
+  .lang-label {
+    display: none;
   }
 
   .cards,

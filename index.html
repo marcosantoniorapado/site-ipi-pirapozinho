@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/favicon/favicon-192.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header class="hero" id="inicio">
@@ -39,11 +39,13 @@
         </div>
 
         <div class="lang-switcher" aria-label="Selecionar idioma">
-          <button class="lang-button is-active" type="button" data-lang="pt" data-i18n="lang.pt">
-            🇧🇷 Português
+          <button class="lang-button is-active" type="button" data-lang="pt" aria-label="Ver site em português" title="Português">
+            <span class="flag-icon flag-br" aria-hidden="true"><span></span></span>
+            <span class="lang-label">PT</span>
           </button>
-          <button class="lang-button" type="button" data-lang="de" data-i18n="lang.de">
-            🇩🇪 Deutsch
+          <button class="lang-button" type="button" data-lang="de" aria-label="Webseite auf Deutsch anzeigen" title="Deutsch">
+            <span class="flag-icon flag-de" aria-hidden="true"><span></span></span>
+            <span class="lang-label">DE</span>
           </button>
         </div>
 
@@ -298,6 +300,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
