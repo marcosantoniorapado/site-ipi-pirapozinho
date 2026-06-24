@@ -50,6 +50,7 @@ function renderEmptyState() {
 
 function createBulletinCard(entry) {
   const copy = getBulletinCopy();
+  const downloadHref = entry.download || entry.arquivo;
   const article = document.createElement("article");
   article.className = "bulletin-card";
 
@@ -72,8 +73,10 @@ function createBulletinCard(entry) {
 
   const downloadLink = document.createElement("a");
   downloadLink.className = "btn btn-primary";
-  downloadLink.href = entry.arquivo;
-  downloadLink.download = "";
+  downloadLink.href = downloadHref;
+  if (!entry.download) {
+    downloadLink.download = "";
+  }
   downloadLink.textContent = copy.download;
 
   actions.append(openLink, downloadLink);
