@@ -40,6 +40,12 @@ site-ipi-pirapozinho/
 ├── downloads/
 │   ├── Boletim Dominical.pdf
 │   ├── boletim-dominical.pdf
+│   ├── boletim-extraido-AAAA-MM-DD/
+│   │   ├── *_EXTRAIDO.txt
+│   │   ├── *_parte1.pdf
+│   │   └── *_parte2.pdf
+│   ├── boletins-recebidos/
+│   │   └── *.pdf
 │   └── boletins/
 │       ├── boletins.json
 │       └── *.pdf
@@ -59,6 +65,13 @@ O histórico público fica em:
 
 ```text
 downloads/boletins/
+```
+
+As cópias recebidas e o material auxiliar de extração ficam em:
+
+```text
+downloads/boletins-recebidos/
+downloads/boletim-extraido-AAAA-MM-DD/
 ```
 
 O índice lido pela página `boletins.html` fica em:
