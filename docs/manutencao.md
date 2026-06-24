@@ -1,81 +1,83 @@
 # Manutenção do site
 
-## Como atualizar o WhatsApp
+## Atualizar o boletim atual
 
-No arquivo `index.html`, procurar por:
-
-```text
-5518996373353
-```
-
-Trocar pelo novo número no formato internacional, sem espaços e sem sinais.
-
-## Como atualizar redes sociais
-
-No arquivo `index.html`, procurar pela seção `links-grid`.
-
-Ali ficam os botões de redes sociais e links úteis.
-
-## Como trocar imagens
-
-As imagens principais ficam em:
+O arquivo principal da home fica em:
 
 ```text
-assets/img/
+downloads/Boletim Dominical.pdf
 ```
 
-Arquivos usados:
+Quando chegar um novo boletim:
+
+1. substituir o arquivo atual
+2. manter também uma cópia no histórico
+3. atualizar o índice `downloads/boletins/boletins.json`
+4. fazer commit e push
+
+## Histórico de boletins
+
+Os PDFs antigos ficam em:
 
 ```text
-fachada-igreja.jpg
-simbolo-ipi.jpg
-cafe-e-fe.jpg
+downloads/boletins/
 ```
 
-Para trocar uma imagem, manter o mesmo nome do arquivo ou atualizar o caminho no `index.html`.
+Cada item listado em `boletins.json` deve ter:
 
-## Como publicar no GitHub Pages
+- data
+- título
+- caminho do arquivo PDF
 
-Depois de enviar os arquivos:
+## Testar localmente
 
-1. Entrar no repositório.
-2. Acessar `Settings`.
-3. Acessar `Pages`.
-4. Em `Source`, selecionar `Deploy from a branch`.
-5. Selecionar branch `main`.
-6. Selecionar pasta `/root`.
-7. Salvar.
-
-## Como testar localmente
-
-Abrir o arquivo `index.html` no navegador.
-
-Também é possível usar um servidor local simples:
+Na pasta do projeto:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Depois acessar:
+Depois abrir:
 
 ```text
-http://localhost:8080
+http://localhost:8080/
+http://localhost:8080/boletins.html
 ```
 
-## Boas práticas
+## Atualizar imagens
 
-- Não colocar CPF, senhas, dados sensíveis ou informações privadas.
-- Não publicar dados pessoais de membros sem autorização.
-- Confirmar com a liderança antes de publicar informações financeiras.
-- Manter o site simples.
-- Usar redes sociais para avisos semanais e conteúdo que muda com frequência.
+As imagens do site ficam em:
 
+```text
+assets/img/
+```
 
-## Atualização semanal do boletim
+Os ícones de idioma ficam em:
 
-Para atualizar o boletim dominical no site:
+```text
+assets/icons/
+```
 
-1. Salvar o novo PDF com o nome definido para a edição atual.
-2. Substituir o arquivo existente em `downloads/Boletim Dominical.pdf`.
-3. Fazer commit e push para o GitHub.
-4. Aguardar o GitHub Pages atualizar a página.
+## Atualizar redes sociais e links
+
+Os links principais ficam em `index.html`.
+
+Se for trocar WhatsApp, Instagram, YouTube, Facebook ou mapa, basta ajustar os links no HTML e testar de novo localmente.
+
+## Publicação
+
+Fluxo básico:
+
+```bash
+git status
+git add .
+git commit -m "Descreva aqui a alteração"
+git push
+```
+
+## Cuidados
+
+- não publicar informações internas da equipe
+- não publicar documentos de bastidor
+- manter no repositório público apenas o que for útil para o site
+- validar a home e a página `boletins.html` antes de cada publicação

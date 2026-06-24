@@ -16,8 +16,10 @@ const translations = {
     "nav.bulletin": "Boletim",
     "nav.location": "Localização",
     "nav.menu": "Abrir menu",
-    "lang.pt": "🇧🇷 Português",
-    "lang.de": "🇩🇪 Deutsch",
+    "lang.switcher": "Selecionar idioma",
+    "lang.pt": "Português",
+    "lang.es": "Español",
+    "lang.de": "Deutsch",
     "brand.alt": "Símbolo da IPI Pirapozinho",
     "brand.name": "IPI Pirapozinho",
     "hero.kicker": "Igreja Presbiteriana Independente",
@@ -72,6 +74,16 @@ const translations = {
     "bulletin.text": "Baixe o boletim dominical mais recente disponibilizado pela igreja.",
     "bulletin.file": "Boletim Dominical.pdf",
     "bulletin.button": "Baixar boletim",
+    "bulletin.archiveLink": "Ver boletins anteriores",
+    "bulletinsPage.meta.description": "Arquivo de boletins dominicais da Igreja Presbiteriana Independente de Pirapozinho-SP.",
+    "bulletinsPage.title": "Arquivo de Boletins | IPI Pirapozinho",
+    "bulletinsPage.nav.home": "Início",
+    "bulletinsPage.nav.current": "Boletim atual",
+    "bulletinsPage.nav.contact": "WhatsApp",
+    "bulletinsPage.kicker": "Arquivo histórico",
+    "bulletinsPage.heading": "Arquivo de Boletins",
+    "bulletinsPage.intro": "Aqui ficam reunidos os boletins dominicais anteriores da IPI Pirapozinho para consulta e download.",
+    "bulletinsPage.backButton": "Voltar para a página inicial",
     "location.kicker": "Localização",
     "location.title": "Venha nos visitar",
     "location.addressLabel": "Endereço:",
@@ -100,6 +112,112 @@ const translations = {
     "floating.text": "WhatsApp",
     "footer.copy": "Igreja Presbiteriana Independente de Pirapozinho-SP"
   },
+  es: {
+    "meta.description": "Sitio institucional de la Iglesia Presbiteriana Independiente de Pirapozinho-SP.",
+    "page.title": "IPI Pirapozinho",
+    "nav.aria": "Navegación principal",
+    "nav.about": "Sobre nosotros",
+    "nav.schedule": "Programación",
+    "nav.links": "Enlaces",
+    "nav.bulletin": "Boletín",
+    "nav.location": "Ubicación",
+    "nav.menu": "Abrir menú",
+    "lang.switcher": "Seleccionar idioma",
+    "lang.pt": "Português",
+    "lang.es": "Español",
+    "lang.de": "Deutsch",
+    "brand.alt": "Símbolo de la IPI Pirapozinho",
+    "brand.name": "IPI Pirapozinho",
+    "hero.kicker": "Iglesia Presbiteriana Independiente",
+    "hero.title": "Pirapozinho: en la misión por la vida",
+    "hero.text": "Una comunidad cristiana reunida para adorar a Dios, proclamar el Evangelio, crecer en la Palabra y servir con amor.",
+    "hero.whatsapp": "Hablar por WhatsApp",
+    "hero.schedule": "Ver programación",
+    "about.kicker": "Nuestra comunidad",
+    "about.title": "Iglesia Presbiteriana Independiente de Pirapozinho",
+    "about.text1": "La IPI Pirapozinho es una comunidad cristiana local, vinculada a la Iglesia Presbiteriana Independiente de Brasil, comprometida con la adoración a Dios, la proclamación del Evangelio, la oración, la comunión y el servicio.",
+    "about.text2": "Este espacio reúne información útil para visitantes, miembros y todos los que desean acompañar la vida de la iglesia.",
+    "identity.alt": "Identidad visual de la IPI Pirapozinho",
+    "identity.title": "En la misión por la vida",
+    "identity.text": "Fe, Palabra, oración y comunión.",
+    "schedule.kicker": "Programación semanal",
+    "schedule.title": "Participe con nosotros",
+    "schedule.sunday.day": "Domingo",
+    "schedule.sunday.title": "Culto y Escuela Dominical",
+    "schedule.sunday.item1": "8h — Torre de oración",
+    "schedule.sunday.item2": "9h — Escuela Dominical",
+    "schedule.sunday.item3": "19h — Culto",
+    "schedule.tuesday.day": "Martes",
+    "schedule.tuesday.title": "Reunión de Oración",
+    "schedule.tuesday.text": "20h — Un tiempo de oración, comunión e intercesión.",
+    "schedule.thursday.day": "Jueves",
+    "schedule.thursday.title": "Academia de la Fe",
+    "schedule.thursday.text": "20h — Estudio, reflexión y crecimiento en la Palabra.",
+    "schedule.friday.day": "Viernes",
+    "schedule.friday.title": "En vivo Café y Fe",
+    "schedule.friday.text": "7h a 7h30 — Un mensaje para comenzar el día con fe.",
+    "cafe.alt": "Arte del En vivo Café y Fe",
+    "cafe.kicker": "Viernes, 7h",
+    "cafe.title": "En vivo Café y Fe",
+    "cafe.text": "Todos los viernes, de 7h a 7h30, una reflexión para alimentar la fe y orientar el corazón en la caminata cristiana.",
+    "cafe.button": "Seguir en Facebook",
+    "prayer.kicker": "Pedidos de oración",
+    "prayer.title": "¿Podemos orar por usted?",
+    "prayer.text": "Envíe su pedido de oración por el WhatsApp de la iglesia. Su mensaje será recibido con respeto y encaminado con cuidado.",
+    "prayer.button": "Enviar pedido de oración",
+    "links.kicker": "Conéctese",
+    "links.title": "Redes sociales y enlaces útiles",
+    "links.whatsapp": "WhatsApp de la Iglesia",
+    "links.instagram": "Instagram",
+    "links.youtube": "YouTube",
+    "links.facebook": "Facebook",
+    "links.ipib": "IPI de Brasil",
+    "links.conecta": "IPI Conecta",
+    "links.estandarte": "O Estandarte",
+    "links.bible": "Biblia Online",
+    "bulletin.kicker": "Boletín dominical",
+    "bulletin.title": "Boletín Dominical IPI",
+    "bulletin.text": "Descargue el boletín dominical más reciente disponibilizado por la iglesia.",
+    "bulletin.file": "Boletim Dominical.pdf",
+    "bulletin.button": "Descargar boletín",
+    "bulletin.archiveLink": "Ver boletines anteriores",
+    "bulletinsPage.meta.description": "Archivo de boletines dominicales de la Iglesia Presbiteriana Independiente de Pirapozinho-SP.",
+    "bulletinsPage.title": "Archivo de Boletines | IPI Pirapozinho",
+    "bulletinsPage.nav.home": "Inicio",
+    "bulletinsPage.nav.current": "Boletín actual",
+    "bulletinsPage.nav.contact": "WhatsApp",
+    "bulletinsPage.kicker": "Archivo histórico",
+    "bulletinsPage.heading": "Archivo de Boletines",
+    "bulletinsPage.intro": "Aquí se reúnen los boletines dominicales anteriores de la IPI Pirapozinho para consulta y descarga.",
+    "bulletinsPage.backButton": "Volver a la página inicial",
+    "location.kicker": "Ubicación",
+    "location.title": "Venga a visitarnos",
+    "location.addressLabel": "Dirección:",
+    "location.addressValue": "Rua José de Alencar, 547 — Pirapozinho-SP",
+    "location.officeLabel": "Atención pastoral:",
+    "location.officeValue": "martes a viernes, de 8h a 12h.",
+    "location.map": "Abrir en el mapa",
+    "location.contact": "Hablar con nosotros",
+    "location.cardAddress": "Rua José de Alencar, 547",
+    "location.cardCity": "Pirapozinho-SP",
+    "location.cardText": "Para avisos actualizados de la semana, siga nuestras redes sociales o hable con nosotros por WhatsApp.",
+    "giving.kicker": "Contribuciones",
+    "giving.title": "Diezmos y ofrendas",
+    "giving.text": "Información para contribuir, conforme a los datos divulgados en el boletín de la iglesia.",
+    "giving.bankLabel": "Banco:",
+    "giving.bankValue": "Sicoob Paulista (756)",
+    "giving.branchLabel": "Agencia:",
+    "giving.branchValue": "4446",
+    "giving.accountLabel": "Cuenta:",
+    "giving.accountValue": "58.849-0",
+    "giving.cnpjLabel": "CNPJ:",
+    "giving.cnpjValue": "44.853.364/0001-90",
+    "giving.payeeLabel": "Beneficiario:",
+    "giving.payeeValue": "Igreja Presbiteriana Independente de Pirapozinho-SP",
+    "floating.aria": "Hablar con la iglesia por WhatsApp",
+    "floating.text": "WhatsApp",
+    "footer.copy": "Igreja Presbiteriana Independente de Pirapozinho-SP"
+  },
   de: {
     "meta.description": "Institutionelle Website der Unabhängigen Presbyterianischen Kirche von Pirapozinho-SP.",
     "page.title": "IPI Pirapozinho",
@@ -110,8 +228,10 @@ const translations = {
     "nav.bulletin": "Gemeindebrief",
     "nav.location": "Standort",
     "nav.menu": "Menü öffnen",
-    "lang.pt": "🇧🇷 Português",
-    "lang.de": "🇩🇪 Deutsch",
+    "lang.switcher": "Sprache auswählen",
+    "lang.pt": "Português",
+    "lang.es": "Español",
+    "lang.de": "Deutsch",
     "brand.alt": "Symbol der IPI Pirapozinho",
     "brand.name": "IPI Pirapozinho",
     "hero.kicker": "Unabhängige Presbyterianische Kirche",
@@ -166,6 +286,16 @@ const translations = {
     "bulletin.text": "Laden Sie den neuesten Sonntagsbrief der Kirche herunter.",
     "bulletin.file": "Boletim Dominical.pdf",
     "bulletin.button": "Gemeindebrief herunterladen",
+    "bulletin.archiveLink": "Frühere Gemeindebriefe ansehen",
+    "bulletinsPage.meta.description": "Archiv der Sonntags-Gemeindebriefe der Unabhängigen Presbyterianischen Kirche von Pirapozinho-SP.",
+    "bulletinsPage.title": "Archiv der Gemeindebriefe | IPI Pirapozinho",
+    "bulletinsPage.nav.home": "Startseite",
+    "bulletinsPage.nav.current": "Aktueller Gemeindebrief",
+    "bulletinsPage.nav.contact": "WhatsApp",
+    "bulletinsPage.kicker": "Historisches Archiv",
+    "bulletinsPage.heading": "Archiv der Gemeindebriefe",
+    "bulletinsPage.intro": "Hier finden Sie frühere Sonntags-Gemeindebriefe der IPI Pirapozinho zum Lesen und Herunterladen.",
+    "bulletinsPage.backButton": "Zur Startseite zurückkehren",
     "location.kicker": "Standort",
     "location.title": "Besuchen Sie uns",
     "location.addressLabel": "Adresse:",
@@ -212,11 +342,18 @@ function storeLanguage(language) {
   }
 }
 
+function getDocumentLanguage(language) {
+  if (language === "de") return "de";
+  if (language === "es") return "es";
+  return "pt-BR";
+}
+
 function applyTranslations(language) {
   const fallback = translations.pt;
-  const activeTranslations = translations[language] || fallback;
+  const activeLanguage = translations[language] ? language : "pt";
+  const activeTranslations = translations[activeLanguage] || fallback;
 
-  document.documentElement.lang = language === "de" ? "de" : "pt-BR";
+  document.documentElement.lang = getDocumentLanguage(activeLanguage);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -241,10 +378,11 @@ function applyTranslations(language) {
   });
 
   languageButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.lang === language);
+    button.classList.toggle("is-active", button.dataset.lang === activeLanguage);
   });
 
-  storeLanguage(language);
+  storeLanguage(activeLanguage);
+  window.dispatchEvent(new CustomEvent("ipi-language-changed", { detail: { language: activeLanguage } }));
 }
 
 if (menuButton && navLinks) {
@@ -263,8 +401,7 @@ if (menuButton && navLinks) {
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const selectedLanguage = button.dataset.lang;
-    applyTranslations(selectedLanguage);
+    applyTranslations(button.dataset.lang);
   });
 });
 

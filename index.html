@@ -38,12 +38,44 @@
           <a href="#localizacao" data-i18n="nav.location">Localização</a>
         </div>
 
-        <div class="lang-switcher" aria-label="Selecionar idioma">
-          <button class="lang-button is-active" type="button" data-lang="pt" data-i18n="lang.pt">
-            🇧🇷 Português
+        <div
+          class="lang-switcher"
+          aria-label="Selecionar idioma"
+          data-i18n="lang.switcher"
+          data-i18n-attr="aria-label"
+        >
+          <button
+            class="lang-button flag-button is-active"
+            type="button"
+            data-lang="pt"
+            aria-label="Português"
+            title="Português"
+            data-i18n="lang.pt"
+            data-i18n-attr="aria-label,title"
+          >
+            <img src="assets/icons/pt-br.png" alt="" />
           </button>
-          <button class="lang-button" type="button" data-lang="de" data-i18n="lang.de">
-            🇩🇪 Deutsch
+          <button
+            class="lang-button flag-button"
+            type="button"
+            data-lang="es"
+            aria-label="Español"
+            title="Español"
+            data-i18n="lang.es"
+            data-i18n-attr="aria-label,title"
+          >
+            <img src="assets/icons/es.png" alt="" />
+          </button>
+          <button
+            class="lang-button flag-button"
+            type="button"
+            data-lang="de"
+            aria-label="Deutsch"
+            title="Deutsch"
+            data-i18n="lang.de"
+            data-i18n-attr="aria-label,title"
+          >
+            <img src="assets/icons/de.png" alt="" />
           </button>
         </div>
 
@@ -197,13 +229,16 @@
 
     <section class="section bulletin" id="boletim">
       <div class="container bulletin-box">
-        <div>
+        <div class="bulletin-copy">
           <p class="section-kicker" data-i18n="bulletin.kicker">Boletim dominical</p>
           <h2 data-i18n="bulletin.title">Boletim Dominical IPI</h2>
           <p>
             <span data-i18n="bulletin.text">Baixe o boletim dominical mais recente disponibilizado pela igreja.</span>
             <strong data-i18n="bulletin.file">Boletim Dominical.pdf</strong>.
           </p>
+          <a class="bulletin-archive-link" href="boletins.html" data-i18n="bulletin.archiveLink">
+            Ver boletins anteriores
+          </a>
         </div>
         <a class="btn btn-primary" href="downloads/Boletim%20Dominical.pdf" target="_blank" rel="noopener" data-i18n="bulletin.button">
           Baixar boletim
