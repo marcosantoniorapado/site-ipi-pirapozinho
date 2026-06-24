@@ -697,7 +697,7 @@ footer {
 
   .hero-content {
     padding-top: 148px;
-    padding-bottom: 96px;
+    padding-bottom: 138px;
   }
 
   .hero-actions {
@@ -707,7 +707,8 @@ footer {
   }
 
   .hero-actions .btn {
-    width: min(100%, 290px);
+    width: 100%;
+    max-width: 290px;
   }
 
   .subpage-hero {
@@ -730,8 +731,21 @@ footer {
   .floating-whatsapp {
     right: 12px;
     bottom: 12px;
-    padding: 12px 14px;
-    font-size: 0.95rem;
+    width: 58px;
+    height: 58px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0;
+  }
+
+  .floating-whatsapp span {
+    display: none;
+  }
+
+  .floating-whatsapp::before {
+    content: "✆";
+    font-size: 1.35rem;
+    line-height: 1;
   }
 }
 
@@ -753,11 +767,11 @@ footer {
   align-items: center;
 }
 
-.giving-content {
+giving-content {
   min-width: 0;
 }
 
-.giving-qr {
+giving-qr {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -765,7 +779,7 @@ footer {
   gap: 10px;
 }
 
-.giving-qr img {
+giving-qr img {
   width: 210px;
   max-width: 100%;
   height: auto;
