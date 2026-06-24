@@ -116,21 +116,21 @@ img {
 .lang-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   padding: 0;
   background: transparent;
 }
 
 .lang-button {
   border: 0;
-  border-radius: 999px;
-  padding: 8px 12px;
+  border-radius: 0;
+  padding: 0;
   background: transparent;
   color: #fff;
   font-weight: 700;
   font-size: 0.92rem;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .lang-button:hover {
@@ -138,20 +138,20 @@ img {
 }
 
 .lang-button.is-active {
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--primary-dark);
+  background: transparent;
+  color: inherit;
 }
 
 .flag-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 20px;
+  width: 24px;
+  height: 17px;
   padding: 0;
   border: 0;
   background: transparent;
-  opacity: 0.72;
+  opacity: 0.76;
   line-height: 0;
 }
 
@@ -161,8 +161,8 @@ img {
   display: block;
   object-fit: cover;
   object-position: center;
-  border-radius: 4px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .flag-button.is-active {
@@ -570,13 +570,14 @@ footer {
 }
 
 .bulletin-card h2 {
-  font-size: 1.45rem;
-  margin-bottom: 12px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.15;
+  margin-bottom: 10px;
 }
 
 .bulletin-date {
   color: var(--muted);
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 }
 
 .bulletin-actions {
