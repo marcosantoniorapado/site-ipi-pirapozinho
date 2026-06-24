@@ -711,6 +711,10 @@ footer {
     max-width: 290px;
   }
 
+  .prayer-box {
+    padding-bottom: 118px;
+  }
+
   .subpage-hero {
     padding-top: 142px;
     padding-bottom: 56px;
@@ -757,6 +761,13 @@ footer {
   min-width: 230px;
   padding-left: 22px;
   padding-right: 22px;
+}
+
+@media (max-width: 560px) {
+  .prayer-box .btn-whatsapp {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Dízimos e ofertas com QR Code */
