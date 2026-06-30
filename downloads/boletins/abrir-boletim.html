@@ -148,10 +148,15 @@
     }
 
     async function openFromDirectUrl(manifest) {
-      const pdfUrl = manifest.directPdf;
-      if (!pdfUrl) {
+      const directPdf = manifest.directPdf;
+      if (!directPdf) {
         throw new Error("pdf direto ausente");
       }
+
+      // Mantem compatibilidade com manifests antigos que gravaram "../"
+      // embora o PDF final fique na mesma pasta deste carregador.
+      const normalizedPdf = directPdf.replace(/^\.\.\//, "");
+      const pdfUrl = new URL(normalizedPdf, window.location.href).href;
 
       bar.style.width = "100%";
 
