@@ -501,6 +501,9 @@ h2 {
   right: 22px;
   bottom: 22px;
   z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--whatsapp);
   color: #063b1b;
   text-decoration: none;
@@ -662,20 +665,29 @@ footer {
   }
 
   .topbar {
+    gap: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .brand {
+    gap: 10px;
+    min-width: 0;
+    flex: 1 1 auto;
   }
 
   .topbar-actions {
     width: auto;
     justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 auto;
     gap: 10px;
   }
 
   .lang-switcher {
     width: auto;
     justify-content: flex-end;
-    gap: 6px;
+    gap: 4px;
   }
 
   .lang-button {
@@ -684,6 +696,8 @@ footer {
 
   .flag-button {
     flex: 0 0 auto;
+    width: 22px;
+    height: 15px;
   }
 
   .cards,
@@ -721,9 +735,9 @@ footer {
   }
 
   .brand span {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     line-height: 1.12;
-    max-width: 118px;
+    max-width: 92px;
   }
 
   .menu-toggle {
@@ -748,8 +762,10 @@ footer {
 
   .floating-whatsapp::before {
     content: "✆";
+    display: block;
     font-size: 1.35rem;
     line-height: 1;
+    transform: translateY(-1px);
   }
 }
 
@@ -778,7 +794,7 @@ footer {
   align-items: center;
 }
 
-.giving-content {
+giving-content {
   min-width: 0;
 }
 
